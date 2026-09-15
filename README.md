@@ -1,8 +1,8 @@
 # Hub X Agent Lab
 
-**Obsidian Hub X** = notes. **This folder** = named crews + CrewAI code.
+**Obsidian Hub X** = notes. **This folder** = named crew specs (+ optional Python).
 
-## Call names (say these)
+## Go-to: Markdown crews (Cursor’s model)
 
 | Call | Job |
 | --- | --- |
@@ -13,28 +13,20 @@
 | **OSCAR-WIRE** | Short GitHub brief |
 | **FOUR-EYES** | Human-approval gate |
 
-Full index: [`crews/CALL-BOOK.md`](crews/CALL-BOOK.md)
-
-Example: `Run DESK-BRIEF on topic: what is an agent`
+Say: `Run DESK-BRIEF on topic: what is an agent`  
+Index: [`crews/CALL-BOOK.md`](crews/CALL-BOOK.md)
 
 ## Layout
 
 ```
 crews/           MD specs + CALL-BOOK
-crews/code/      CrewAI Python sketches
-.cursor/skills/  hub-x-crews skill
-.cursor/rules/   always-on call names
+crews/code/      Optional Python sketches (not daily path)
+.cursor/skills/  hub-x-crews (Markdown default + edge cases)
 ```
 
-## Setup
+## Optional Python
 
-```bash
-cd ~/Documents/Hub-X-Agent-Lab
-source .venv/bin/activate
-python -c "import crewai; print(crewai.__version__)"
-```
-
-Live `kickoff()` needs a model API key. Markdown crews work in Cursor chat without it.
+`crews/code/` + `.venv` — only if you add a vendor API key later. Not required.
 
 ## GitHub
 
