@@ -1,20 +1,17 @@
 # Crew call-book
 
-Say the **call name** in Cursor (with this Lab open, or in Hub X chat):
+**Go-to:** Markdown in Cursor chat (Cursor’s model). **No** Python API key.
 
 > Run **DESK-BRIEF** on topic: …
 
-| Call name | Roles | Job |
-| --- | --- | --- |
-| **DESK-BRIEF** | Researcher → Writer | Explain one topic for Aman (3 then 5 bullets) |
-| **ROSETTA-PASS** | Engineer → Translator | One jargon term → plain + ETRM picture |
-| **ATLAS-PICK** | Scout → Chooser | Which agent *shape* / Governor kit fits the goal |
-| **TOKEN-GATE** | Planner → Trimmer | Cut a plan to the cheap path (Hub X first) |
-| **OSCAR-WIRE** | Finder → Briefer | Short GitHub/repo brief (max 8 bullets) |
-| **FOUR-EYES** | Proposer → Checker | Design a human-approval gate; no books/cash |
+| Call name | Roles | Job | Cap |
+| --- | --- | --- | --- |
+| **DESK-BRIEF** | Researcher → Writer | Explain for Aman | 3 then 5 |
+| **ROSETTA-PASS** | Engineer → Translator | Jargon → plain + ETRM | def + 3 |
+| **ATLAS-PICK** | Scout → Chooser | Shape / kit pick | 3 → 1 |
+| **TOKEN-GATE** | Planner → Trimmer | Cheap path | trim |
+| **OSCAR-WIRE** | Finder → Briefer | Repo brief | ≤8 |
+| **FOUR-EYES** | Proposer → Checker | Approval gate | verdict + 3 |
 
-Specs: `crews/<CALL_NAME>.md`  
-Skill: `.cursor/skills/hub-x-crews/SKILL.md`  
-Code sketches: `crews/code/`
-
-**Rules for every crew:** 2 roles max unless noted. One goal line. No fluff. Audience = Aman (ETRM, non-engineer).
+Specs: `crews/<CALL_NAME>.md` · Skill: `.cursor/skills/hub-x-crews/SKILL.md`  
+Python under `crews/code/` = optional only.
