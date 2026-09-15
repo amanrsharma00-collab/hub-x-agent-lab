@@ -6,7 +6,7 @@
 
 | Call name | Roles | Job | Cap |
 | --- | --- | --- | --- |
-| **DESK-BRIEF** | Researcher → Writer | Explain for Aman | 3 then 5 |
+| **DESK-BRIEF** | Researcher → Writer | Explain in plain English (no ETRM examples) | 3 then 5 |
 | **ROSETTA-PASS** | Engineer → Translator | Jargon → plain + ETRM | def + 3 |
 | **ATLAS-PICK** | Scout → Chooser | Shape / kit pick | 3 → 1 |
 | **TOKEN-GATE** | Planner → Trimmer | Cheap path | trim |
