@@ -4,14 +4,14 @@ from crewai import Agent, Task, Crew, Process
 researcher = Agent(
     role="Researcher",
     goal="Find 3 crisp facts about the topic",
-    backstory="Short bullets for a non-engineer ETRM consultant.",
+    backstory="Short bullets for a non-engineer. Plain English only. No trading examples.",
     verbose=False,
     allow_delegation=False,
 )
 writer = Agent(
     role="Writer",
     goal="Turn facts into 5 short bullets",
-    backstory="ETRM consultant. No fluff.",
+    backstory="Plain English writer. No fluff. No trading examples.",
     verbose=False,
     allow_delegation=False,
 )

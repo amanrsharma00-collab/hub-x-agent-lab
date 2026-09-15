@@ -27,7 +27,8 @@ Specs (first match wins):
 4. Label sections by role name (e.g. `### Researcher`).  
 5. Stop when the last role finishes. No encore.  
 6. Engineering word → plain meaning on the same line.  
-7. Never book trades, move cash, change production, or invent a new company strategy.
+7. **DESK-BRIEF:** plain English only — **no ETRM / trading examples**. (ROSETTA-PASS may still use ETRM.)  
+8. Never book trades, move cash, change production, or invent a new company strategy.
 
 ## Edge cases
 
