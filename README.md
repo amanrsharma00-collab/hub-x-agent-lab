@@ -1,29 +1,41 @@
 # Hub X Agent Lab
 
-**For Aman.** Obsidian Hub X = notes. This folder = code Cursor can run.
+**Obsidian Hub X** = notes. **This folder** = named crews + CrewAI code.
 
-## Open in Cursor
+## Call names (say these)
 
-`File → Open Folder → Documents/Hub-X-Agent-Lab`
+| Call | Job |
+| --- | --- |
+| **DESK-BRIEF** | Explain a topic (3→5 bullets) |
+| **ROSETTA-PASS** | Jargon → plain + ETRM |
+| **ATLAS-PICK** | Which agent shape / kit |
+| **TOKEN-GATE** | Cheap research path |
+| **OSCAR-WIRE** | Short GitHub brief |
+| **FOUR-EYES** | Human-approval gate |
 
-## Installed
+Full index: [`crews/CALL-BOOK.md`](crews/CALL-BOOK.md)
 
-- Python **3.12** (via `uv`)
-- **CrewAI** package (role-based agents)
+Example: `Run DESK-BRIEF on topic: what is an agent`
 
-## Commands
+## Layout
+
+```
+crews/           MD specs + CALL-BOOK
+crews/code/      CrewAI Python sketches
+.cursor/skills/  hub-x-crews skill
+.cursor/rules/   always-on call names
+```
+
+## Setup
 
 ```bash
 cd ~/Documents/Hub-X-Agent-Lab
 source .venv/bin/activate
-python examples/hello_crew.py
+python -c "import crewai; print(crewai.__version__)"
 ```
 
-## Governor kits (starred — not all copied here)
+Live `kickoff()` needs a model API key. Markdown crews work in Cursor chat without it.
 
-See Obsidian `Connect/governor-map`.  
-Full copies of LangGraph/n8n would bloat the vault. We **install** CrewAI; we **link** the rest.
+## GitHub
 
-## Low tokens
-
-2–3 roles max. One goal line. Read Hub X first.
+https://github.com/amanrsharma00-collab/hub-x-agent-lab

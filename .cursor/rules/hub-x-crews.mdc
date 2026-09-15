@@ -1,0 +1,11 @@
+---
+description: Hub X named crews — use call names from crews/CALL-BOOK.md
+alwaysApply: true
+---
+
+# Hub X Agent Lab
+
+- Call names: **DESK-BRIEF**, **ROSETTA-PASS**, **ATLAS-PICK**, **TOKEN-GATE**, **OSCAR-WIRE**, **FOUR-EYES**
+- Specs: `crews/<NAME>.md` · Index: `crews/CALL-BOOK.md`
+- Skill: `.cursor/skills/hub-x-crews/SKILL.md`
+- Crisp. Non-engineer. No fluff. No live books/cash.
