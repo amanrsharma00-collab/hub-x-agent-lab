@@ -8,7 +8,10 @@ description: Named Hub X Markdown crews (DESK-BRIEF, ROSETTA-PASS, ATLAS-PICK, T
 **Default:** run the crew **in this chat** with Cursor’s model.  
 **Not default:** Python CrewAI `kickoff()` / extra vendor keys.
 
-Audience: Aman. ETRM. Non-engineer.
+Audience: Aman. Non-engineer.
+
+**Toolkits in Lab:** Markdown crews (go-to) · CrewAI (optional) · **LangGraph** (lifecycle / wait-for-human).  
+LangGraph notes: Hub X `Connect/langgraph-start.md`. Not a seventh call name.
 
 ## Call names
 
