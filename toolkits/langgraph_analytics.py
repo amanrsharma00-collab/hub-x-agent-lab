@@ -57,9 +57,9 @@ def pack_step(state: AnalyticsState) -> dict:
 def wait_step(state: AnalyticsState) -> dict:
     decision = interrupt(
         {
-            "ask": "Approve this KPI pack for Power Apps / Power BI Desktop?",
+            "ask": "Approve this KPI pack for Power Apps / Power BI service (browser)?",
             "pack": state["pack"],
-            "next_if_yes": "Import CSV to developer Dataverse or Excel, then build 1 gallery + 1 chart",
+            "next_if_yes": "In browser: make.powerapps.com import CSV → gallery; app.powerbi.com one chart",
         }
     )
     return {"approved": bool(decision)}
