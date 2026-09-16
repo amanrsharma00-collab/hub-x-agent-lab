@@ -24,7 +24,9 @@ Index: [`crews/CALL-BOOK.md`](crews/CALL-BOOK.md)
 | CrewAI | Optional Python role crews |
 | **LangGraph** | Step → wait for human → continue |
 
-Sketch: [`toolkits/langgraph_wait.py`](toolkits/langgraph_wait.py)  
+Sketches: [`toolkits/langgraph_wait.py`](toolkits/langgraph_wait.py) · [`toolkits/langgraph_analytics.py`](toolkits/langgraph_analytics.py)
+Sample data: [`toolkits/sample_data/`](toolkits/sample_data/) (free Power Platform tests)
+Skill: `power-platform-analytics`  
 Hub X note: `Connect/langgraph-start.md`
 
 ## Layout

@@ -1,0 +1,6 @@
+metric,target_value,unit
+revenue,2500,USD
+late_orders_max,3,count
+open_high_cases_max,4,count
+avg_case_age_max,10,days
+west_orders_min,8,count
