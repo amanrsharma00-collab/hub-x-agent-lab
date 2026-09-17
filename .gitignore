@@ -3,3 +3,7 @@ __pycache__/
 *.pyc
 .env
 .DS_Store
+
+# Vertical Power MCP secrets
+vertical-power-mcp/.env
+.env

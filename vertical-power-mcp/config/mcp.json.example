@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "hub-x-vertical-power": {
+      "command": "python",
+      "args": ["-m", "src.server"],
+      "cwd": "REPLACE_WITH_PATH_TO/Hub-X-Agent-Lab/vertical-power-mcp",
+      "env": {
+        "PYTHONPATH": "."
+      }
+    }
+  }
+}
