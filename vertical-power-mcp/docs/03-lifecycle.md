@@ -1,53 +1,56 @@
 # 03 — Lifecycle: Plan → Validate → Execute → Test
 
+**Master:** [[../PLAN]]
+
 ## Status
 
 | Stage | State |
 | --- | --- |
-| **Plan** | **Done** (this pack) |
-| Validate | Waiting — Aman says `validate` |
-| Execute | Not started — scaffold MCP in Agent Lab |
-| Test | Not started — IEA + one period + browser check |
+| **Plan** | **Revised** (Canvas + Automate official skills; Path A) |
+| **Validate** | **Paused** — waiting org tenant + Aman says `validate` |
+| Execute | Not started |
+| Test | Not started |
 
-## Plan (done) — checklist
+## Plan checklist
 
-- [x] Charter: vertical Energy integrate, not POC  
-- [x] Scope: Apps + Automate + BI + IEA; outs listed  
-- [x] Action catalog multi-pillar  
-- [x] $0 Wave 1 money rule  
-- [x] IEA key handling note  
+- [x] Charter / scope / action catalog  
+- [x] GitHub revalidation (Canvas + Automate skills)  
+- [x] Path A account gate documented  
+- [x] Oscar brief phrase wired  
+- [x] DOC-MAP complete  
 
-## Validate — what we check (no spend)
+## Validate (when Aman is ready)
 
-1. Browser: Developer environment exists (make.powerapps.com).  
-2. Dataverse: can create/open **Energy Indicator** (Phase 0).  
-3. Automate: can create one instant flow in same env (under free run cap).  
-4. Power BI service: can open app.powerbi.com with same Microsoft account (My Workspace).  
-5. Lab: `toolkits/sample_data/` readable.  
-6. Secrets: place for `IEA_API_KEY` exists locally (file not committed).  
-7. Cursor: can run **local** MCP process (python-sdk) — no Azure paid SKU required for Wave 1 design.
+1. Org / M365 Dev account signs into make.powerapps.com  
+2. Developer environment exists; Instance URL captured (no passwords in vault)  
+3. Can create blank canvas + enable **Coauthoring**  
+4. make.powerautomate.com works on **same** org account  
+5. app.powerbi.com reachable  
+6. `.NET 10` SDK present (for Canvas Authoring MCP) — `dotnet --list-sdks`  
+7. Lab `sample_data/` + `.env.example` ready; IEA key optional for first pass  
+8. Cursor can register **local** Vertical Power MCP (placeholder OK)  
+9. Attempt Canvas Authoring MCP connect from Cursor (or note Copilot CLI fallback)
 
-Fail any item → fix before Execute.
+## Execute (after validate passes)
 
-## Execute — build order
+1. Implement our MCP modules in Lab `vertical-power-mcp/src/`  
+2. Wire Cursor MCP: our server + Microsoft Canvas (+ Automate when ready)  
+3. Phase 0 Energy Indicator table  
+4. First canvas gallery via official skills  
+5. First import flow (1B)
 
-1. Agent Lab package `toolkits/hub_x_vertical_power_mcp/`  
-2. Implement modules: `lab`, `iea`, `apps`, `flow`, `pbi`  
-3. Cursor `mcp.json` → local server only  
-4. Hub X skill update: `power-platform-vertical-architect` + agentic chain call MCP tools after approve  
-5. Browser: one Import flow + one simple report connected to Dataverse/Excel bridge as available on free tier  
+## Test criteria
 
-## Test — success criteria
+| # | Pass |
+| --- | --- |
+| T1 | CSV profile works |
+| T2 | IEA fetch or CSV fallback → typed rows |
+| T3 | Upsert ≤30 indicators visible in Dataverse |
+| T4 | Canvas sync shows gallery (Authoring MCP) |
+| T5 | Flow run Succeeded (1B) |
+| T6 | BI open hint or refresh (1D) |
+| T7 | No secrets in git/Obsidian |
 
-| # | Test | Pass |
-| --- | --- | --- |
-| T1 | `lab.profile_csv` on sample | Profile returns |
-| T2 | `iea.fetch_series` with your key | ≥1 typed row (or clear auth error) |
-| T3 | Approve → upsert ≤30 indicators | Rows visible in Dataverse |
-| T4 | `flow.trigger_*` + `flow.get_run` | Succeeded |
-| T5 | `pbi.refresh_dataset` or report open hint | Browser shows numbers |
-| T6 | No call to official `/api/mcp` | Confirmed in config |
+## LangGraph rail
 
-## LangGraph rail (every write)
-
-`draft action → show typed payload → WAIT Aman → execute → report → stop`
+`draft → WAIT Aman → execute → report → stop`

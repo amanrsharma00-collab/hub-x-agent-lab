@@ -1,6 +1,10 @@
 # Phase 0 — Energy Indicator MVP (IEA)
 
-**Env:** Power Apps Developer (browser) · **Agents:** Cursor + Automate · **External:** IEA only
+**Still the data-layer schema for PowerVertical.**  
+**Stack now:** see Hub X `PowerVertical/PLAN.md`.
+
+**Env:** Power Apps Developer (org account) · Cursor + our MCP + Microsoft Canvas/Automate MCPs  
+**External:** IEA (key in Lab `.env` only)
 
 ## 1. Architectural Data Schema
 

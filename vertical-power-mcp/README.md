@@ -1,34 +1,17 @@
 # Vertical Power MCP — Agent Lab
 
-**Obsidian notes:** `Hub X/PowerVertical/`  
-**This folder:** code, local MCP, secrets, samples.
-
-## Layout
-
-```
-vertical-power-mcp/
-  docs/           Mirrored essentials from PowerVertical
-  src/            MCP server (Execute phase)
-  config/         mcp.json.example
-  scripts/        helper scripts
-  sample_data/    CSVs for free tests
-  .env.example    Secret names only
-```
-
-## Rules
-
-Follow Hub X `PowerVertical/rules/operating-rules.md`:  
-Markdown crews · LangGraph wait · Wave 1 $0 · no hosted Dataverse MCP.
+**Obsidian plan:** `Hub X/PowerVertical/PLAN.md`  
+**Oscar brief:** say **Oscar, brief me** in Cursor (Hub X open).
 
 ## Status
 
-| Stage | State |
-| --- | --- |
-| Plan | Done (docs) |
-| Validate | Waiting Aman answers + `validate` |
-| Execute | MCP scaffold not started |
-| Test | Not started |
+Plan **revised**. Validate **paused** until org tenant. MCP code not started.
 
-## Secrets
+## Layout
 
-Copy `.env.example` → `.env` (gitignored). Never commit keys.
+docs/ (mirrored PowerVertical essentials) · src/ (Execute) · config/ · sample_data/ · .env.example
+
+## Stack
+
+- Ours: local data MCP (IEA → Dataverse)
+- Microsoft: Canvas Authoring MCP + power-automate plugin ([power-platform-skills](https://github.com/microsoft/power-platform-skills))

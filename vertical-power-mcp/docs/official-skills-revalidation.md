@@ -67,7 +67,7 @@ Org account (Path A)
 
 ## Next
 
-1. Aman completes **Path A** (org/dev tenant).  
-2. On validate: check Studio + .NET 10 + whether Canvas MCP runs from Cursor.  
-3. Mirror skill pointers into `PowerVertical/` + Lab `docs/`.  
-4. Do **not** clone 200+ community tools — use **microsoft/power-platform-skills** as the UI/flow foundation.
+1. Aman delivers org / M365 Dev tenant → say `validate`.  
+2. Validate Studio + .NET 10 + Canvas MCP from Cursor (or Copilot CLI fallback).  
+3. Execute: implement our data MCP; wire Microsoft Canvas + Automate MCPs.  
+4. Oscar brief anytime: **Oscar, brief me**.

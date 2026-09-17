@@ -13,14 +13,14 @@ Audience: Aman. Plain English. **Mac + web browser only.**
 | Layer | What we use |
 | --- | --- |
 | Brain | Cursor skills + Markdown crews |
-| Hands | **Vertical Power MCP** (local) — Apps + Automate + BI + IEA tools |
-| Rails | LangGraph: ask → **wait** → next phase |
-| Specs | Hub X `Connect/vertical-power-mcp/` |
-| Apps / Flows / BI | Browser maker + Power BI service |
-| Data | Dataverse Developer Plan + IEA (key in `.env` only) |
+| Plan | Hub X `PowerVertical/PLAN.md` |
+| Data hands | Our Vertical Power MCP (Lab) |
+| UI hands | Microsoft Canvas Authoring MCP + canvas-apps skills |
+| Flow hands | Microsoft power-automate / FlowAgent MCP |
+| Rails | LangGraph wait before writes |
+| Account | Org / M365 Dev tenant (Path A) |
 
-Do **not** use official hosted Dataverse MCP from Cursor in Wave 1 (billing risk).  
-Do **not** include canvas control authoring, 200+ community tools, premium connectors, or production in Wave 1.
+Wave 1: prefer not hosted Dataverse MCP from Cursor. No premium/production defaults. No 200+ community mega-MCPs.
 
 
 ## Architecture rules (always)
