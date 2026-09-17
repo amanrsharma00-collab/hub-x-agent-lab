@@ -12,16 +12,16 @@ Audience: Aman. Plain English. **Mac + web browser only.**
 
 | Layer | What we use |
 | --- | --- |
-| Brain | Cursor skills + Markdown crews (`DESK-BRIEF`, `TOKEN-GATE`, `FOUR-EYES`) |
-| Rails | LangGraph pattern: ask → **wait** → next phase |
-| Apps | make.powerapps.com (Developer Plan) |
-| Flows | make.powerautomate.com |
-| Data | Dataverse in **developer** env |
-| Reports | app.powerbi.com (browser) |
-| Agents | Prefer Cursor packs + Flow actions first; **Copilot Studio only if Aman has access** (often not free) |
+| Brain | Cursor skills + Markdown crews |
+| Hands | **Vertical Power MCP** (local) — Apps + Automate + BI + IEA tools |
+| Rails | LangGraph: ask → **wait** → next phase |
+| Specs | Hub X `Connect/vertical-power-mcp/` |
+| Apps / Flows / BI | Browser maker + Power BI service |
+| Data | Dataverse Developer Plan + IEA (key in `.env` only) |
 
-Do **not** assume paid Copilot Studio, premium connectors, or production envs.  
-Do **not** wire Microsoft MCP unless Aman approves.
+Do **not** use official hosted Dataverse MCP from Cursor in Wave 1 (billing risk).  
+Do **not** include canvas control authoring, 200+ community tools, premium connectors, or production in Wave 1.
+
 
 ## Architecture rules (always)
 
