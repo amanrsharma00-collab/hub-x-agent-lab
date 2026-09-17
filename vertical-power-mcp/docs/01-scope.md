@@ -1,28 +1,43 @@
 # 01 — Scope (in / out / waves)
 
-## In scope (Wave 1 — build now, $0 Microsoft extras)
+## In scope (Wave 1)
+
+### Wave 1A (can start without Power Automate)
 
 | Pillar | What MCP + skills may do |
 | --- | --- |
-| **Power Apps / Dataverse** | Tables, rows, simple app metadata list, gallery-ready data for Energy Indicator |
-| **Power Automate** | List flows, get run status, **trigger** instant/manual flows with typed inputs, read failure summaries |
-| **Power BI (service)** | List workspaces/datasets/reports you own, refresh dataset, basic embed/open links for browser |
-| **IEA** | Authenticated fetch of agreed series → map to Energy Indicator rows |
-| **Cursor skills** | PROFILE, KPI-PACK, EXCEPTION, APP-SCHEMA, vertical architect, FOUR-EYES, LangGraph waits |
+| **Power Apps / Dataverse** | Tables, rows, Energy Indicator — **needs org/Developer account** |
+| **IEA + Lab CSV** | Fetch/map/profile; upsert via MCP direct API (not Flow) |
+| **Cursor skills** | PROFILE, KPI-PACK, EXCEPTION, APP-SCHEMA, FOUR-EYES, LangGraph waits |
+| **Power BI (service)** | Only after same org account works; else defer |
+
+### Wave 1B (after work/school or M365 Dev tenant)
+
+| Pillar | What |
+| --- | --- |
+| **Power Automate** | List / trigger / monitor import + exception flows |
+
+**Blocker note:** Personal Microsoft accounts **cannot** use Power Automate cloud. See [[../personal-account-blocker]].
 
 ## Explicitly out (until Aman opens Wave 2+)
 
-These stay **out** so we do not boil the ocean or burn money:
-
 | Out | Why |
 | --- | --- |
-| Canvas **control** authoring (drag every widget via AI) | No stable free API for full studio; browser handoff instead |
-| Full solution **ALM** (env→env promote like enterprise release factory) | Needs tooling + often non-dev capacity; Wave 2 |
-| **200+** community mega-MCP tool dumps | Noisy, untrusted, token-heavy |
+| **200+** random community mega-MCP dumps | Prefer **microsoft/power-platform-skills** instead |
 | **Premium** connectors as default | Can force paid licenses |
-| **Production** environments | Mandate + Governor: no live/production until you say |
-| Copilot Studio / official hosted Dataverse MCP from Cursor | Credit / license risk |
-| Live trading / cash / non-IEA production systems | Hub X anti-goals |
+| **Production** environments | Mandate + Governor |
+| Copilot Studio / hosted Dataverse MCP from Cursor (Wave 1 default) | Credit / license risk — optional later |
+| Live trading / cash | Hub X anti-goals |
+
+## Explicitly **in** after org account (revised 2026-09-17)
+
+| In | Source |
+| --- | --- |
+| **Canvas authoring** via skills + Canvas Authoring MCP | [microsoft/power-platform-skills](https://github.com/microsoft/power-platform-skills) `canvas-apps` |
+| **Power Automate** build/debug via FlowAgent MCP | Same repo `power-automate` plugin |
+| CAT extras (optional) | [microsoft/power-cat-skills](https://github.com/microsoft/power-cat-skills) |
+
+Full write-up: [[official-skills-revalidation]]
 
 ## Wave 2 (later, only if you approve spend/risk)
 
