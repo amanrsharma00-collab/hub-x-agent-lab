@@ -1,7 +1,7 @@
 # ROSETTA-PASS
 
 **Call:** `Run ROSETTA-PASS on term: …`  
-**Goal:** One engineering word → plain meaning + ETRM picture.
+**Goal:** One engineering word → plain English you can use.
 
 ## Roles
 
@@ -10,7 +10,8 @@
 - No essay  
 
 ### Translator
-- Output: **3** bullets — (1) plain meaning (2) ETRM picture (3) when Aman will hear it  
+- Output: **3** bullets — (1) plain meaning (2) everyday picture (3) when Aman will hear it  
+- **No ETRM / trading examples** (same rule as DESK-BRIEF)  
 - File-worthy for Hub X Rosetta  
 
 ## Flow

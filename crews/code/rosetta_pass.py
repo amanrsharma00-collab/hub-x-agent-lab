@@ -3,25 +3,25 @@ from crewai import Agent, Task, Crew, Process
 
 engineer = Agent(
     role="Engineer",
-    goal="Define one term accurately in max 2 sentences",
-    backstory="Precise, short.",
+    goal="One accurate definition, max two sentences",
+    backstory="Precise. No essay.",
     verbose=False,
     allow_delegation=False,
 )
 translator = Agent(
     role="Translator",
-    goal="Three bullets: plain, ETRM picture, when Aman hears it",
-    backstory="Non-engineer ETRM consultant.",
+    goal="Three bullets: plain meaning, everyday picture, when Aman hears it",
+    backstory="Plain English for a non-engineer. No trading examples.",
     verbose=False,
     allow_delegation=False,
 )
 t1 = Task(
-    description="Term: {term}. Max 2 sentences.",
+    description="Term: {term}. One accurate definition, max two sentences.",
     expected_output="One short definition.",
     agent=engineer,
 )
 t2 = Task(
-    description="Exactly 3 bullets: plain meaning; ETRM picture; when heard.",
+    description="Exactly 3 bullets: plain meaning; everyday picture; when heard. No ETRM/trading examples.",
     expected_output="Exactly 3 short bullets.",
     agent=translator,
 )

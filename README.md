@@ -7,7 +7,7 @@
 | Call | Job |
 | --- | --- |
 | **DESK-BRIEF** | Explain a topic (3→5 bullets; no ETRM examples) |
-| **ROSETTA-PASS** | Jargon → plain + ETRM |
+| **ROSETTA-PASS** | Jargon → plain English (no ETRM) |
 | **ATLAS-PICK** | Which agent shape / kit |
 | **TOKEN-GATE** | Cheap research path |
 | **OSCAR-WIRE** | Short GitHub brief |
@@ -24,9 +24,7 @@ Index: [`crews/CALL-BOOK.md`](crews/CALL-BOOK.md)
 | CrewAI | Optional Python role crews |
 | **LangGraph** | Step → wait for human → continue |
 
-Sketches: [`toolkits/langgraph_wait.py`](toolkits/langgraph_wait.py) · [`toolkits/langgraph_analytics.py`](toolkits/langgraph_analytics.py)
-Sample data: [`toolkits/sample_data/`](toolkits/sample_data/) (free Power Platform tests)
-Skill: `power-platform-analytics`  
+Sketch: [`toolkits/langgraph_wait.py`](toolkits/langgraph_wait.py)  
 Hub X note: `Connect/langgraph-start.md`
 
 ## Layout
